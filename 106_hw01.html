@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset ="UTF-8" /> 
+    <title>D&W Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
+    <link rel="stylesheet" type = "text/css" href="106_hw01.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+</head>
+
+
+
+<body>
+    <h1> 
+        <img src = "/images/dw-logo.png" alt = 'Dingus & Widget Logo' width = 9% height = 12% />
+          Global Dashboard</h1>
+
+<table id = DWS style="width:100%" class = tfonts>
+    
+    <thead>
+        <tr>
+            <th>Dingus</th>
+            <th>Widget</th>
+            <th>Sales</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class = table_center> 0 </td>
+            <td class = table_center> 0</td>
+            <td class = table_dollar style="text-align:center" data-char="$">$0.00</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+        <div class="grid-container">
+
+            <div class="grid-item1">
+                <section>
+                <caption class = captions1> Total Sales Breakdown
+                </caption>
+                <img src = "/images/pie.png" alt = 'pie chart' height = 100% width = 100%/>
+                </section>
+            </div>
+            <div class="grid-item2">
+                <section>
+                <caption class = captions1>
+                    Sales Per Day
+                </caption>
+                <img src = "/images/bar.png" alt = 'bar chart' height = 100% width = 100%/>
+                </section>
+            </div>
+            <div class="grid-item3" > <iframe src="https://app.zingsoft.com/demos/view/DK4RG3XN" height = 100% width = 100%>
+            </iframe>
+                <figure>
+                    <figcaption>
+                    <a href="https://app.zingsoft.com/demos/view/DK4RG3XN">
+                        <p>Source</p>
+                    </a>
+                </figcaption>
+                </figure>
+            </div>   
+          </div>
+<br>
+<br>
+<hr>
+<br>
+
+<table id = "OrderHistory" style="width:90%" class="OrderHistory">
+    <caption>Order History</caption>
+    <thead>
+        <tr>
+            <th rowspan="2" style="background-color:rgb(182, 184, 180);color:black;" >ID#</th>
+            <th rowspan="2">Date</th>
+            <th colspan="2">Quantity</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+            <th>Dingus</th>
+            <th>Widget</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td class = table_center style="background-color:rgb(182, 184, 180);color:black;">1221</td>
+            <td class = table_center>12/12/19</td>
+            <td class = table_center>4</td>
+            <td class = table_center>10</td>
+            <td class = table_center>$12.33</td>
+        </tr>
+        <tr>
+            <td class = table_center>1222</td>
+            <td class = table_center>12/21/19</td>
+            <td class = table_center>1</td>
+            <td class = table_center>2</td>
+            <td class = table_center>$27.34</td>
+        </tr>
+        <tr>
+            <td class = table_center>1223</td>
+            <td class = table_center>1/5/20</td>
+            <td class = table_center>14</td>
+            <td class = table_center>19</td>
+            <td class = table_center>$345.33</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+          <td colspan="5" class = table_center >&copy; 2020 D&W Worldwide.</td>
+        </tr>
+      </tfoot>
+</table>
+<br>
+<details>
+    <summary>Order Form </summary>
+    <p style="margin-left:200px">
+    
+        <hr>
+        <dialog open>
+            This section will work only after HW2!
+        </dialog>
+      <form>
+          Dingus <input type="text" name="Dingus" value="0">
+          @ <input type="text" name="@" value="14.25">
+          = $ <input type="text" name="= $" value="0.00">
+      </form>
+      <br>
+      <form>
+          Widget <input type="text" name="Widget" value="0">
+          @ <input type="text" name="@" value="9.99">
+          = $ <input type="text" name="= $" value="0.00">
+      </form>
+      <br>
+      <form>
+          Total $ <input type="text" name="Total">
+      </form>
+      <br>
+    <form method="get">
+        Shipping <input list="Shipping" name="Shipping">
+        <datalist id="Shipping">
+          <option value="San Diego">
+          <option value="San Jose">
+          <option value="Los Angeles">
+        </datalist>
+      </form>
+      <br>
+      <form>
+          Payment <select name="Payment" size="4" multiple>
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="PayPal">PayPal</option>
+          </select>
+      </form>
+      <br>
+      <form>
+          Comment <textarea rows="2" cols="15">
+          </textarea> <br>
+          <input type="button" value="Cancel">
+          <input type="button" value="Order">
+      </form>
+
+  </details>
+<h5>
+    Disclaimer: This page is provided <i> as is </i>
+</h5>
+
+    Notes
+    <ul id="Notes" style="padding-left:80px">
+        <li>Your order will leave warehouse in 3-5 days</li>
+        <li>If you have any questions please contact us at 123456789</li>
+        <li>D&W is a proud supporter of the <i>Stuart Collection</i></li>
+    </ul>
+
+<h5>
+    <em> 9500 Gilman Dr, La Jolla, CA 92093 </em>
+</h5>
+
+</body>
+  
